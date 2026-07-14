@@ -5,6 +5,7 @@ import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
 
 import PrivateRoute from "./PrivateRoute";
+import Products from "../pages/Products";
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,14 @@ export default function AppRoutes() {
         element={
           <PrivateRoute>
             <Dashboard />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/products"
+        element={
+          <PrivateRoute>
+            <Products />
           </PrivateRoute>
         }
       />
