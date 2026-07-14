@@ -1,16 +1,70 @@
-# React + Vite
+# Multi-Store Stock Movement (MERN)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies
 
-Currently, two official plugins are available:
+- React
+- Node.js
+- Express
+- MongoDB
+- JWT Authentication
+- Mongoose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Project Structure
+backend/
+frontend/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Backend Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+cd backend
+npm install
+cp .env.example .env
+
+
+Fill  `.env` values.
+
+Start server:
+npm run dev
+
+
+## Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+## Features
+
+### Authentication
+
+- Register
+- Login
+- JWT Authentication
+
+### Admin
+
+- Create Product
+- Create Store
+- Create Initial Stock
+- Adjust Stock
+- Transfer Stock
+
+### Shopper
+
+- View Products
+- View Stores
+- View Stock
+- Low Stock Filter
+
+## Environment Variables
+
+PORT
+MONGO_URI
+JWT_SECRET
+
+## Running Tests
+npm test
+
+
+## API Documentation
+openapi.yaml
